@@ -9,6 +9,8 @@ class NavigationBarButtom extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BottomNavigationBar(
+      showSelectedLabels: false,
+      showUnselectedLabels: false,
       onTap: (value) {
         if (value == 0) {
           Navigator.push(
@@ -17,30 +19,27 @@ class NavigationBarButtom extends StatelessWidget {
               builder: (context) => const HomeActivity(),
             ),
           );
-        } else {
-          if (value == 2) {
-            Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (context) => const HomeActivity(),
-              ),
-            );
-          }
+        }
+        else if (value == 1) {
+          
+        }
+        else if (value == 2){
+
         }
       },
       backgroundColor: Colors.blue,
-      items:  [
+      items:  const [
         BottomNavigationBarItem(
           icon: Icon(Icons.home, color: Colors.black),
-          label: "Home",
+          label: "Home"
         ),
         BottomNavigationBarItem(
           icon: Icon(Icons.search, color: Colors.black),
-          label: "Search",
+          label: "Search"
         ),
         BottomNavigationBarItem(
           icon: Icon(Icons.shopping_cart, color: Colors.black),
-          label: "Cart",
+          label: "Cart"        
         ),
       ],
     );

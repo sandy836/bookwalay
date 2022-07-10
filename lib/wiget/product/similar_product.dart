@@ -1,7 +1,7 @@
 import 'package:bookwalay/wiget/custom_circular_progess.dart';
 import 'package:bookwalay/service/card_service.dart';
 import 'package:flutter/material.dart';
-import 'package:bookwalay/activity/generic_listView.dart';
+import 'package:bookwalay/wiget/generic_listView.dart';
 
 class SimilarProductWidget extends StatelessWidget {
   final String productType;

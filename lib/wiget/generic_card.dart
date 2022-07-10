@@ -4,7 +4,7 @@ import 'package:bookwalay/const.dart';
 
 
 class CardWidget extends StatelessWidget {
-  CardWidget(
+  const CardWidget(
       {Key? key,
       required this.httpResponseData,
       required this.index,

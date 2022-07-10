@@ -1,4 +1,4 @@
-import 'package:bookwalay/wiget/generic_gridView.dart';
+import 'package:bookwalay/activity/generic_gridView.dart';
 import 'package:flutter/material.dart';
 
 // ignore: must_be_immutable
